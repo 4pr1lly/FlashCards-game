@@ -14,7 +14,7 @@ Will be able to log your wins, missed tries, previous tries, and log your lowest
 
 <b> Bronze, Silver and Gold Plan of building and execution</b>
 
-<em>Bronze</em> - Code HTML. The Office character images to use- Michael, Dwight, Pam, Jim and Andy in 5 columns. Toby, Kelly, Stanley, Darryl in 4 rows
+<em>Bronze</em> - Code HTML. The Office character images to use- Michael, Dwight, Pam, Jim and in 4 columns.  Stanley,Andy, Darryl in 3 rows
     Use some CSS to outline the table, colors (background).
     
 <em>Silver </em> -
