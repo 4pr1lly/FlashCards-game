@@ -44,8 +44,12 @@ div.game-container  {
     margin: 100px;
     justify-content: center;
     border: 4px solid purple;
-   
+    perspective: 1000px;
 
+}
+
+.cards.flip {
+    transform: rotateY(180deg);
 }
 
 
@@ -57,11 +61,12 @@ div.game-container  {
     height:200px;
     width: 200px;
     position:relative; /*just added*/
-    
+    transform-style:preserve-3d;
+    transition:transform .5s;
     
 }
 
-div.card.visible {
+/*div.card.visible {*/
     /*position: absolute;*/
     /*top:0;*/
    /* right:0;*/
@@ -71,7 +76,7 @@ div.card.visible {
     /*height:175px;
     width: 125px;*/
 
-}
+
 
 img {
     
@@ -86,9 +91,12 @@ img {
     position: absolute; /*this threw it out*/
     height:200px;
     width: 200px;
+    backface-visibility:hidden ;
 
-    
+}
 
+.front-side {
+    transform:rotateY(180deg);
 }
 
 /*.card.visible .back-side {
