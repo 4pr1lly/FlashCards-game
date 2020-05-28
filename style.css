@@ -1,4 +1,6 @@
 *{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
 
@@ -25,10 +27,12 @@ body {
     grid-column: 1 / -1;
     display:flex;
     justify-content: space-between;
+    
 }
 .game-info {
     color: yellow;
     font-size: 2em;
+    
 
     
 }
@@ -40,15 +44,19 @@ div.game-container  {
     margin: 100px;
     justify-content: center;
     border: 4px solid purple;
-
+   
 
 }
 
-.card {
+
+
+
+.cards {
     position: relative;
     background-color: gray;
     height:200px;
     width: 200px;
+    position:relative; /*just added*/
     
     
 }
@@ -66,19 +74,18 @@ div.card.visible {
 }
 
 img {
-    width 100px;
+    
     height:200px;
     width: 200px;
     border:4px solid white;
 }
 
-.back-side {
-  position: relative;
 
-}
 
-.front-side {
-    position: relative;
+.front-side, .back-side {
+    position: absolute; /*this threw it out*/
+    height:200px;
+    width: 200px;
 
     
 
