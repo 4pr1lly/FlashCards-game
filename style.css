@@ -35,25 +35,63 @@ body {
 
 div.game-container  {
     display: grid;
-    grid-template-columns: repeat(4, auto); /*4 columbs 4 rows*/
-    grid-gap:10px;
-    margin: 50px;
+    grid-template-columns: repeat(4, auto); 
+    grid-gap:20px;
+    margin: 100px;
     justify-content: center;
+    border: 4px solid purple;
 
 
 }
 
 .card {
+    position: relative;
     background-color: gray;
-    height:175px;
-    width: 125px;
+    height:200px;
+    width: 200px;
+    
     
 }
 
+div.card.visible {
+    /*position: absolute;*/
+    /*top:0;*/
+   /* right:0;*/
+   /* bottom:0;*/
+   /* left:0;*/
+   /* transform:rotatX(-180deg);*/
+    /*height:175px;
+    width: 125px;*/
 
+}
 
+img {
+    width 100px;
+    height:200px;
+    width: 200px;
+    border:4px solid white;
+}
 
+.back-side {
+  position: relative;
 
+}
 
+.front-side {
+    position: relative;
+
+    
+
+}
+
+/*.card.visible .back-side {
+    transform: rotateY (-180 deg);
+
+}*/
+
+/*.card.visible .front-side {
+    transform: rotateX(0);
+
+}*/
 
 
