@@ -8,7 +8,7 @@ const cards = document.querySelectorAll('.cards');
 function flipCard() {
     /*console.log("I was flipped");*/
 if (lockBoard) return;  
-if(this===firstCard) return; // function to stop doubclick of the card and holding on the board
+if(this===firstCard) return; // function to stop doubclick of the card and holding on the board-run a boolean
 this.classList.add("flip");
 
 
@@ -57,6 +57,12 @@ if (!userFlippedCard) { //when the user clicks the card for the first time.
        [firstCard. secondCard] = [null, null];
     }   
      
-
+    (function shuffle () { // this will iterate through the cards and shuffle the images
+        cards.forEach( cards => {
+            let randomPos = Math.floor (Math. random () *16);
+                cards.getElementsByClassName.order = randomPos;
+        });
+    }) //immediately invoked (runs as soon as its defined)
+    
 cards.forEach(card=> card.addEventListener ("click", flipCard));
 
