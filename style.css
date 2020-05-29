@@ -9,8 +9,6 @@ html {
 }
 
 
-
-
 body {
     margin: 0;
     background: radial-gradient(rgb(3, 17, 65), rgb(56, 96, 226))
@@ -36,8 +34,6 @@ body {
 .game-info {
     color: yellow;
     font-size: 2em;
-    
-
     
 }
 
@@ -106,21 +102,6 @@ img {
     transform:rotateY(180deg);
 }
 
-.restart-button-div {
-   
-    max-width: 50%;
-    margin: 1.5em auto;
-    text-align: center;
-    
-}
-
-.restart-button { 
-    padding: 0.7em 1.4em;
-    background-color:blue;
-    color:red;
-    border: 2px black;
-}
-
 /*.win-container {
     grid-column:2/4;
     grid-row: 2/4;
@@ -145,5 +126,6 @@ img {
     transform: rotateX(0);
 
 }*/
+
 
 
