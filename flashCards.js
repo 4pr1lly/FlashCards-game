@@ -5,6 +5,10 @@ let lockBoard = false;
 
 const cards = document.querySelectorAll('.cards');
 
+/*function showWinScreen() { //this will show the win screen
+    document.
+}// need to look up this function further 
+
 function flipCard() {
     /*console.log("I was flipped");*/
 if (lockBoard) return;  
@@ -63,6 +67,12 @@ if (!userFlippedCard) { //when the user clicks the card for the first time.
                 cards.getElementsByClassName.order = randomPos;
         });
     }) //immediately invoked (runs as soon as its defined)
+
+    //restart the game function
+    moves =0;
+    counter.inntertext = "${moves} move{s}";
+    
+
     
 cards.forEach(card=> card.addEventListener ("click", flipCard));
 
