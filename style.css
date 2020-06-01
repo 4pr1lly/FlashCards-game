@@ -34,21 +34,20 @@ html {
    
   }
   
-  .starRating {
+ /* .starRating {
     position: absolute;
     right: 15rem;
-  }
+  }*/
 
 body {
     margin: 0;
     /*background: radial-gradient(circle (rgb(219, 216, 216))*/
     background-image: linear-gradient(to right, #5d5d60, #646568, #6b6c6f, #737477, #7a7c7f, #86888b, #929497, #9ea1a3, #b2b5b7, #c7cacb, #dcdfdf, #f2f4f4);
-
-
 }
 
+
 .page-title {
-    color:#1347F7; 
+    color:#000084; 
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
     text-align:center;
@@ -63,8 +62,8 @@ body {
     perspective:1000px
     
 }
+
 .game-info {
-    
     font-size: 2em;
     
 }
@@ -75,15 +74,12 @@ div.game-container  {
     grid-gap:20px;
     margin: 80px;
     justify-content: center;
-    
-   
 
 }
 
 .flip {
     transform: rotateY(180deg);
 }
-
 
 
 
@@ -121,7 +117,7 @@ img {
 
 
 .front-side, .back-side {
-    position: absolute; /*this threw it out*/
+    position: absolute; 
     height:200px;
     width: 200px;
     backface-visibility:hidden ;
@@ -175,7 +171,5 @@ img {
     /*display: block;*/
     /*justify-content: center*/
     ;
- 
-
 }
 

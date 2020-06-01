@@ -3,8 +3,6 @@ let firstCard, secondCard;
 let lockBoard = false; 
 //records current timer. on or off
 let timerOn = false;
-// Variable that stores the setInterval()
-let timer;
 
 const symbols = [
     '<i class="fa fa-star"></i>', '<i class="fa fa-star"></i>',];
@@ -14,29 +12,37 @@ const cards = document.querySelectorAll('.cards');
 
 function flipCard() {
     /*console.log("I was flipped");*/
+
+// function to stop doubclick of the card and holding on the board-run a boolean
+
 if (lockBoard) return;  
-if(this===firstCard) return; // function to stop doubclick of the card and holding on the board-run a boolean
+if(this===firstCard) return; 
 this.classList.add("flip");
 
 
-if (!userFlippedCard) { //when the user clicks the card for the first time.
+//when the user clicks the card for the first time.
+if (!userFlippedCard) { 
     userFlippedCard = true;
     firstCard =this;
   return;  
 }
-    // second card flip
+
+ // second card flip
     userFlippedCard= false;
     secondCard = this;
+
 
 //checking if the cards match
 
     checkForMatch (); 
     }
 
+
+    // ternary allows if else statement in just one line
 function checkForMatch () {
-    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;  //using Ternary operator
+    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;  
         
-        isMatch ? disableCards() : unflipCards(); // ternary allows if else statement in just one line
+        isMatch ? disableCards() : unflipCards(); 
 
      }
 
@@ -48,8 +54,9 @@ function disableCards(){
         resetBoard();
     }
 
+ // unlocks cards after they are flipped
 function unflipCards (){
-        lockBoard = true;// unlocks cards after they are flipped
+        lockBoard = true;
 
         setTimeout(() => {
             firstCard.classList.remove ("flip");
@@ -64,7 +71,8 @@ function unflipCards (){
        [firstCard. secondCard] = [null, null];
     }   
      
-    (function shuffle () { // this will iterate through the cards and shuffle the images
+    // this will iterate through the cards and shuffle the images
+    (function shuffle () { 
         cards.forEach( cards => {
             let randomPos = Math.floor (Math. random () *16);
                 cards.getElementsByClassName.order = randomPos;
