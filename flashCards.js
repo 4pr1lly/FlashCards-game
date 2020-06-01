@@ -3,12 +3,8 @@ let firstCard, secondCard;
 let lockBoard = false; 
 //records current timer. on or off
 let timerOn = false;
-
 // Variable that stores the setInterval()
-
 let timer;
-
-
 
 const symbols = [
     '<i class="fa fa-star"></i>', '<i class="fa fa-star"></i>',];

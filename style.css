@@ -43,10 +43,7 @@ body {
     margin: 0;
     /*background: radial-gradient(circle (rgb(219, 216, 216))*/
     background-image: linear-gradient(to right, #5d5d60, #646568, #6b6c6f, #737477, #7a7c7f, #86888b, #929497, #9ea1a3, #b2b5b7, #c7cacb, #dcdfdf, #f2f4f4);
-    
- 
-    
-    
+
 
 }
 
@@ -169,7 +166,7 @@ img {
     font-weight: bolder;
     font-size: 20pt;
     height:120px;
-    width: 300px;
+    width: 310px;
     border: 5px black;
     margin: auto;
     display: flex;
