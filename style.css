@@ -9,9 +9,39 @@ html {
 }
 
 
+.performance {
+    width: 500px;
+    height: 2rem;
+    margin: 0.5rem auto 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    color:red;
+    position: relative;
+  }
+  
+  .moveCounter {
+    position: absolute;
+    left: 10rem;
+  }
+  
+  .timer {
+    position: absolute;
+   
+  }
+  
+  .starRating {
+    position: absolute;
+    right: 15rem;
+  }
+
 body {
     margin: 0;
-    background: radial-gradient(rgb(3, 17, 65), rgb(56, 96, 226))
+    /*background: radial-gradient(rgb(3, 17, 65), rgb(56, 96, 226));*/
+   
+    
+    
 
 }
 
@@ -132,16 +162,16 @@ img {
     color: white;
     font-size: 2ex;
     font-weight: bolder;
+    font-size: 10pt;
     height:60px;
-    width: 170px;
-    border: 3px black;
-    margin: 50px 40px;
-
-
-   
-    
-    
-   
-    
+    width: 200px;
+    border: 5px black;
+    margin: auto;
+    display: flex;
+    /*display: block;*/
+    /*justify-content: center*/
+    ;
+ 
 
 }
+

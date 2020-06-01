@@ -1,199 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" href= "style.css">
-    <title>The Office Flash memory game</title>
+    <title>The Office Memory</title>
 </head>
+   
 <body>
-
+   
 
     <h1 class ="page-title">The Office Matching Game</h1>
     <div class ="game-container">
- 
+       
+<div class= "game-info-container"> <!--contains time and number of flips-->
+    
 
-            <div class= "game-info-container"> <!--contains time and number of flips-->
-                 
-                 <div class= "game-info"> <!--Attempts-->
-                     Attempts <span id= "Attempts">0 </span>
-                </div>
+        <div class="performance">
+            <div class="moveCounter">
+              0 moves
             </div>
-
-
-
-         <div class= "cards"data-framework ="Andy">
-                <div class = "front-side">
-                    <img class ="Andy" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/AndyMeme.PNG?raw=true">            
-                 </div>   
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
+            <div class="timer">
+              00:00
             </div>
+            <div class="starRating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+</div>
 
 
-            <div class= "cards"data-framework ="Dwight">
-                <div class = "front-side">
-                    <img class ="Dwight" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/DwightMeme.PNG?raw=true">            
-                 </div>   
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
-             </div>
+    <div class= "cards"data-framework ="Andy">
+         <div class = "front-side">
+            <img class ="Andy" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/AndyMeme.PNG?raw=true"></div>
+        <div class = "back-side">
+            <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"> </div>
+    </div>
+
+
+    <div class= "cards"data-framework ="Dwight">
+        <div class = "front-side">
+            <img class ="Dwight" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/DwightMeme.PNG?raw=true"> </div>   
+        <div class = "back-side">
+            <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"></div>
+     </div>
 
 
 
-            <div class= "cards"data-framework ="Jim">
-                <div class = "front-side">
-                    <img class ="Jim" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/JimMeme.PNG?raw=true">    
-                </div>   
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
-             </div>
+     <div class= "cards"data-framework ="Jim">
+        <div class = "front-side">
+            <img class ="Jim" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/JimMeme.PNG?raw=true"></div>   
+        <div class = "back-side">
+            <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"></div>
+     </div>
              
-
-
-            <div class= "cards"data-framework ="Michael">
-                <div class = "front-side">
-                    <img class ="Michael" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/MichaelMeme.PNG?raw=true">    
-                </div> 
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
-             </div>
-
-
-
-            <div class= "cards"data-framework ="Pam">
-                <div class = "front-side">
-                    <img class ="Pam" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/PamMeme.PNG?raw=true">    
-                </div> 
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
-             </div>
+     
+     
+     <div class= "cards"data-framework ="Michael">
+         <div class = "front-side">
+            <img class ="Michael" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/MichaelMeme.PNG?raw=true"></div> 
+        <div class = "back-side">
+            <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"></div>
+    </div>
 
 
 
-            <div class= "cards"data-framework ="Stanley">
-                <div class = "front-side">
-                    <img class ="Stanley" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/StanleyMeme.PNG?raw=true">    
-                </div> 
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
-            </div>
-
-
-            <div class= "cards"data-framework ="Darryl">
-                <div class = "front-side">
-                    <img class ="Darryl" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/daryylMeme.PNG?raw=true">    
-                </div> 
-                <div class = "back-side">
-                <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-            </div>
-          </div>
+    <div class= "cards"data-framework ="Pam">
+        <div class = "front-side">
+             <img class ="Pam" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/PamMeme.PNG?raw=true"> </div> 
+         <div class = "back-side">
+            <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"> </div>
+     </div>
 
 
 
-            <div class= "cards"data-framework ="Andy">
-                <div class = "front-side">
-                    <img class ="Andy" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/AndyMeme.PNG?raw=true">            
-                 </div>  
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
-             </div>
+    <div class= "cards"data-framework ="Stanley">
+         <div class = "front-side">
+                <img class ="Stanley" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/StanleyMeme.PNG?raw=true"> </div> 
+             <div class = "back-side">
+                 <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"> </div>
+     </div>
 
 
-            <div class= "cards" data-framework ="Dwight">
-                <div class = "front-side">
-                    <img class ="Dwight" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/DwightMeme.PNG?raw=true">            
-                 </div>  
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
-             </div>
+    <div class= "cards"data-framework ="Darryl">
+        <div class = "front-side">
+             <img class ="Darryl" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/daryylMeme.PNG?raw=true"> </div> 
+        <div class = "back-side">
+             <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"></div>
+    </div>
 
 
-            <div class= "cards" data-framework ="Jim">
-                <div class = "front-side">
-                    <img class ="Jim" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/JimMeme.PNG?raw=true">    
-                </div>  
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
-          </div>
 
-            <div class= "cards"data-framework ="Group">
-                <div class = "front-side">
-                    <img class ="Group" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/group.PNG?raw=true">    
-                </div> 
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
-              </div>
+     <div class= "cards"data-framework ="Andy">
+        <div class = "front-side">
+             <img class ="Andy" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/AndyMeme.PNG?raw=true"> </div>  
+        <div class = "back-side">
+             <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"></div>
+     </div>
 
 
-            <div class= "cards"data-framework ="Michael">
-                <div class = "front-side">
-                    <img class ="Michael" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/MichaelMeme.PNG?raw=true">    
-                </div>  
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div> 
-            </div>
-
-            <div class= "cards"data-framework ="Pam">
-                <div class = "front-side">
-                    <img class ="Pam" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/PamMeme.PNG?raw=true">    
-                </div> 
-                <div class = "back-side">
-                <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-            </div>
-            
-        </div>
-
-            <div class= "cards"data-framework ="Stanley">
-                <div class = "front-side">
-                    <img class ="Stanley" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/StanleyMeme.PNG?raw=true">    
-                </div> 
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
-             </div>
+    <div class= "cards" data-framework ="Dwight">
+        <div class = "front-side">
+             <img class ="Dwight" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/DwightMeme.PNG?raw=true"> </div>  
+        <div class = "back-side">
+            <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"> </div>
+     </div>
 
 
-        
-            <div class= "cards"data-framework ="Darryl">
-                <div class = "front-side">
-                    <img class ="Darryl" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/daryylMeme.PNG?raw=true">    
-                </div> 
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
-            </div>
+    <div class= "cards" data-framework ="Jim">
+        <div class = "front-side">
+             <img class ="Jim" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/JimMeme.PNG?raw=true"> </div>  
+        <div class = "back-side">
+             <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"> </div>
+    </div>
+
+
+
+     <div class= "cards"data-framework ="Group">
+         <div class = "front-side">
+            <img class ="Group" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/group.PNG?raw=true"> </div> 
+         <div class = "back-side">
+            <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"></div>
+    </div>
+
+
+
+     <div class= "cards"data-framework ="Michael">
+         <div class = "front-side">
+            <img class ="Michael" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/MichaelMeme.PNG?raw=true"></div>  
+         <div class = "back-side">
+            <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"></div> 
+     </div>
+
+
+
+     <div class= "cards"data-framework ="Pam">
+         <div class = "front-side">
+            <img class ="Pam" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/PamMeme.PNG?raw=true"></div> 
+        <div class = "back-side">
+            <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
+        </div>       
+    </div>
+
+
+
+     <div class= "cards"data-framework ="Stanley">
+        <div class = "front-side">
+            <img class ="Stanley" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/StanleyMeme.PNG?raw=true">  </div> 
+         <div class = "back-side">
+             <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"> </div>
+     </div>
+
+
+
+    <div class= "cards"data-framework ="Darryl">
+         <div class = "front-side">
+             <img class ="Darryl" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/daryylMeme.PNG?raw=true">  </div> 
+         <div class = "back-side">
+            <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"> </div>
+    </div>
             
 
-            <div class= "cards"data-framework ="Group">
-                <div class = "front-side">
-                    <img class ="Group" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/group.PNG?raw=true">    
-                </div> 
-                <div class = "back-side">
-                    <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true">
-                </div>
-            </div>
-        
+    <div class= "cards"data-framework ="Group">
+         <div class = "front-side">
+             <img class ="Group" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/group.PNG?raw=true"> </div> 
+         <div class = "back-side">
+             <img class = "logo" src= "https://github.com/4pr1lly/FlashCards-game/blob/master/BackSide.PNG?raw=true"> </div>
+     </div>
+    
+</div>
 
-           <div class= "reset-container">
-               
-            <button id= "reset">↻"Fool me once, strike one. 
-                Fool me twice,strike three." ↻
-               
-            </button>
+    <div class= "reset-container">
+        <button id= "reset"> ↻  "Fool me once, strike one. 
+             Fool me twice,strike three."    ↻
+        </button>
+    </div>
+       
+
         
-        </div>
+    
 
           
            <!--<div class = "win-container">
@@ -206,5 +195,4 @@
     <script defer src="flashCards.js"></script>
 
 </body>
-
 </html>
