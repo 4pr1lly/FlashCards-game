@@ -3,7 +3,7 @@ Project-1
 
 <h1> Description</h1>
 
-A memory game base off the TV show, "The Office".
+A memory game based off the TV show, "The Office".
 
 <b>Purpose:</b>
 
