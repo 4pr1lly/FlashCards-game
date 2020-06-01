@@ -1,16 +1,18 @@
 # FlashCards-game
-project 1 flash cards game
+Project-1
 
-This is a rough draft Psuedocode place holder for flashcard game:
+<h1> Description</h1>
+
+A memory game base off the TV show, "The Office".
 
 <b>Purpose:</b>
 
-Create an interactive flashcard game using HTML,CSS and JAVASSCRIPT.
+Create an interactive flashcard-memory game using HTML,CSS and JAVASSCRIPT.
 
 <b>What it should do</b>
 
-Card flip matching game. Choose two cards with matching images to log win.
-Will be able to log your wins, missed tries, previous tries, and log your lowest attempted tries.
+Choose two cards with matching images to log win and hold face forward until all cards are flipped over.
+Will be able to log your wins, timed tries, and reset the board.
 
 <b> Bronze, Silver and Gold Plan of building and execution</b>
 
