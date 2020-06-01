@@ -163,16 +163,18 @@ img {
 }*/
 
 #reset {
-    background-color: indigo;
+    background-color:#1347F7;
     color: white;
     font-size: 2ex;
     font-weight: bolder;
-    font-size: 10pt;
-    height:60px;
-    width: 200px;
+    font-size: 20pt;
+    height:120px;
+    width: 300px;
     border: 5px black;
     margin: auto;
     display: flex;
+    border-radius: 10px;
+    
     /*display: block;*/
     /*justify-content: center*/
     ;
